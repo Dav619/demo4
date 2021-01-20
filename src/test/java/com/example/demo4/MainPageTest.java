@@ -27,7 +27,9 @@ public class MainPageTest {
 
     @Test
     public void test(){
+        Selenide.sleep(10000);
         open("https://staff.am/");
+        Selenide.sleep(10000);
         Assert.assertEquals(text(), "CAREER SEARCH STARTS HERE.");
 
     }
